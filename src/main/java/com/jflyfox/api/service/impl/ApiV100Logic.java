@@ -9,6 +9,8 @@ import com.jflyfox.api.service.IApiLogic;
 import com.jflyfox.modules.admin.article.TbArticle;
 import com.jflyfox.modules.admin.folder.FolderService;
 import com.jflyfox.modules.admin.folder.TbFolder;
+import com.jflyfox.modules.admin.folderrollpicture.FolderrollpictureService;
+import com.jflyfox.modules.admin.folderrollpicture.TbFolderRollPicture;
 import com.jflyfox.modules.front.service.FrontCacheService;
 
 /**
@@ -20,6 +22,7 @@ public class ApiV100Logic extends BaseApiLogic implements IApiLogic {
 
 	private FrontCacheService service = new FrontCacheService();
 	private FolderService folderServer = new FolderService();
+	private FolderrollpictureService rollpictureService = new FolderrollpictureService();
 
 	@Override
 	public ApiResp config(ApiForm form) {
@@ -28,7 +31,12 @@ public class ApiV100Logic extends BaseApiLogic implements IApiLogic {
 
 	@Override
 	public ApiResp folders(ApiForm form) {
-		List<TbFolder> list = folderServer.getFolders(form.getInt("siteId"));
+		List<TbFolder> list = folderServer.getFolders(form.getSiteId());
+		return new ApiResp(form).addData("list", list);
+	}
+	@Override
+	public ApiResp rollpicture(ApiForm form) {
+		List<TbFolderRollPicture> list = rollpictureService.getFolders(form.getSiteId());
 		return new ApiResp(form).addData("list", list);
 	}
 

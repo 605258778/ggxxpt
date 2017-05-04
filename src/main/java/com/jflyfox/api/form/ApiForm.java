@@ -31,6 +31,9 @@ public class ApiForm {
 	private String time; // 时间戳
 	private String checkSum; // 校验和
 	private String p; // 参数
+	private int siteId = 2; // 网站
+
+	
 
 	/**
 	 * 获取分页信息
@@ -56,6 +59,9 @@ public class ApiForm {
 		}
 		if (this.pageSize != null) {
 			treeMap.put("pageSize", this.pageSize + "");
+		}
+		if (this.siteId != 0) {
+			treeMap.put("siteId", this.siteId + "");
 		}
 		treeMap.put("apiUser", this.apiUser);
 		treeMap.put("time", this.time);
@@ -248,7 +254,13 @@ public class ApiForm {
 	public void setP(String p) {
 		this.p = p;
 	}
+	public int getSiteId() {
+		return siteId;
+	}
 
+	public void setSiteId(int siteId) {
+		this.siteId = siteId;
+	}
 	@Override
 	public String toString() {
 		return "[apiNo=" + this.apiNo + "]" //
@@ -258,6 +270,7 @@ public class ApiForm {
 				+ "[apiUser=" + this.apiUser + "]" //
 				+ "[time=" + this.time + "]" //
 				+ "[checkSum=" + this.checkSum + "]" //
+				+ "[siteId=" + this.siteId + "]" //
 				+ "[p=" + this.p + "]";
 	}
 
