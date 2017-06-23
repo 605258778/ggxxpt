@@ -12,6 +12,7 @@ import com.jflyfox.modules.admin.folder.TbFolder;
 import com.jflyfox.modules.admin.folderrollpicture.FolderrollpictureService;
 import com.jflyfox.modules.admin.folderrollpicture.TbFolderRollPicture;
 import com.jflyfox.modules.front.service.FrontCacheService;
+import com.jflyfox.modules.front.template.TemplateService;
 
 /**
  * Api基础方法
@@ -36,8 +37,10 @@ public class ApiV100Logic extends BaseApiLogic implements IApiLogic {
 	}
 	@Override
 	public ApiResp rollpicture(ApiForm form) {
+		Page<TbArticle> newNews = TemplateService.articlePageTopTitle(1, 10, form.getSiteId());
+		Page<TbArticle> newDynamic = TemplateService.articlePageTitle(1, 10, form.getSiteId());
 		List<TbFolderRollPicture> list = rollpictureService.getFolders(form.getSiteId());
-		return new ApiResp(form).addData("list", list);
+		return new ApiResp(form).addData("top_stories", list).addData("stories", newNews).addData("newDynamic", newDynamic);
 	}
 
 	@Override
@@ -48,8 +51,10 @@ public class ApiV100Logic extends BaseApiLogic implements IApiLogic {
 
 	@Override
 	public ApiResp pageArticle(ApiForm form) {
-		Page<TbArticle> page = service.getArticle(form.getPaginator(), form.getInt("folderId"));
-		return new ApiResp(form).addData("list", page.getList()).addData("total", page.getTotalRow());
+		Page<TbArticle> page = service.getArticleByFolderId(form.getPaginator(), form.getFolderId());
+		String background = service.getFolderImg(form.getFolderId());
+		String description = service.getFolderContent(form.getFolderId());
+		return new ApiResp(form).addData("stories", page.getList()).addData("total", page.getTotalRow()).addData("background", background).addData("description", description);
 	}
 
 	@Override

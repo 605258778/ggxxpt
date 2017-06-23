@@ -1,9 +1,14 @@
 package com.jflyfox.modules.admin.folder;
 
+import java.io.File;
+
 import com.jfinal.plugin.activerecord.Page;
+import com.jfinal.upload.UploadFile;
 import com.jflyfox.component.base.BaseProjectController;
+import com.jflyfox.component.util.JFlyfoxUpload;
 import com.jflyfox.jfinal.component.annotation.ControllerBind;
 import com.jflyfox.jfinal.component.db.SQLUtils;
+import com.jflyfox.modules.admin.site.TbSite;
 import com.jflyfox.util.StrUtils;
 
 /**
@@ -103,8 +108,14 @@ public class FolderController extends BaseProjectController {
 
 	public void save() {
 		Integer pid = getParaToInt();
+		TbSite site = getSessionSite().getBackModel();
+		UploadFile uploadImage = getFile("model.image_url", JFlyfoxUpload.getUploadTmpPath(site), JFlyfoxUpload.UPLOAD_MAX);
 		TbFolder model = getModel(TbFolder.class);
-
+		// 图片附件
+		if (uploadImage != null) {
+			String fileName = JFlyfoxUpload.renameFile(JFlyfoxUpload.getUploadFilePath(site, "folder_image"), uploadImage);
+			model.set("image_url", JFlyfoxUpload.getUploadPath(site, "folder_image") + File.separator + fileName);
+		}
 		// 日志添加
 		Integer userid = getSessionUser().getUserID();
 		String now = getNow();

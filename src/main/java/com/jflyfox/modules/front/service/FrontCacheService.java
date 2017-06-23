@@ -8,6 +8,7 @@ import com.jflyfox.jfinal.base.BaseService;
 import com.jflyfox.jfinal.base.Paginator;
 import com.jflyfox.modules.admin.article.ArticleConstant;
 import com.jflyfox.modules.admin.article.TbArticle;
+import com.jflyfox.modules.admin.folder.TbFolder;
 import com.jflyfox.modules.admin.foldernotice.TbFolderNotice;
 import com.jflyfox.modules.admin.folderrollpicture.TbFolderRollPicture;
 import com.jflyfox.modules.admin.tags.TbTags;
@@ -155,7 +156,26 @@ public class FrontCacheService extends BaseService {
 						+ " order by t.publish_time desc,t.update_time desc", siteId);
 		return articles;
 	}
-
+	/**
+	 * 返回最新文章标题
+	 * 
+	 * 2015年5月24日 下午10:52:05 flyfox 369191470@qq.com
+	 * 
+	 * @param paginator
+	 * @return
+	 */
+	public Page<TbArticle> getNewArticleTitle(Paginator paginator, int siteId) {
+		String key = ("newArticle_" + paginator.getPageNo() + "_" + paginator.getPageSize() + "_" + siteId);
+		// 推荐文章列表
+		Page<TbArticle> articles = TbArticle.dao.paginateCache(cacheName, key, paginator, "select t.id,t.folder_id,t.title,t.type,t.count_view,t.count_comment,t.status,t.is_comment,"
+				+ "t.is_recommend,t.sort,t.image_url,t.image_net_url,t.publish_time,t.publish_user,t.start_time,t.end_time,t.update_time,t.create_time,t.create_id " //
+				, " from tb_article t " //
+						+ " left join tb_folder tf on tf.id = t.folder_id " //
+						+ "where " + getPublicWhere() //
+						+ " and  tf.site_id = ? " //
+						+ " order by t.publish_time desc,t.update_time desc", siteId);
+		return articles;
+	}
 	/**
 	 * 返回对应文章列表
 	 * 
@@ -208,7 +228,7 @@ public class FrontCacheService extends BaseService {
 	/**
 	 * 返回对应文章列表
 	 * 
-	 * 2015年5月24日 下午10:52:05 flyfox 369191470@qq.com
+	 *@author zengw
 	 * 
 	 * @param paginator
 	 * @param folderId
@@ -223,7 +243,25 @@ public class FrontCacheService extends BaseService {
 				, fromSql, folderId);
 		return articles;
 	}
-
+	/**
+	 * 返回对应文章列表
+	 * 
+	 *@author zengw
+	 * 
+	 * @param paginator
+	 * @param folderId
+	 * @return
+	 */
+	public Page<TbArticle> getArticleTitle(Paginator paginator, int folderId) {
+		String key = ("article_" + folderId + "_" + paginator.getPageNo() + "_" + paginator.getPageSize());
+		String fromSql = " from tb_article t where " + getPublicWhere() + " and t.folder_id =  ? " //
+				+ " order by t.sort,t.create_time desc";
+		// 推荐文章列表
+		Page<TbArticle> articles = TbArticle.dao.paginateCache(cacheName, key, paginator, "select id,folder_id,title,type,count_view,count_comment,status,is_comment,"
+				+ "is_recommend,sort,image_url,image_net_url,publish_time,publish_user,start_time,end_time,update_time,create_time,create_id " //
+				, fromSql, folderId);
+		return articles;
+	}
 	/**
 	 * 返回对应文章列表
 	 * 
@@ -244,7 +282,7 @@ public class FrontCacheService extends BaseService {
 	/**
 	 * 返回对应文章
 	 * 
-	 * 2015年5月24日 下午10:52:05 flyfox 369191470@qq.com
+	 * 
 	 * 
 	 * @param paginator
 	 * @param folderId
@@ -256,7 +294,25 @@ public class FrontCacheService extends BaseService {
 				"select * from tb_article where id = ?", articleId);
 		return articles;
 	}
-
+	/**
+	 * 根据栏目返回对应文章
+	 * 
+	 * 
+	 * 
+	 * @param paginator
+	 * @param folderId
+	 * @return
+	 */
+	public Page<TbArticle> getArticleByFolderId(Paginator paginator,int folderId) {
+		String key = ("newArticle_" + paginator.getPageNo() + "_" + paginator.getPageSize() + "_" + folderId);
+		// 推荐文章列表
+		Page<TbArticle> articles = TbArticle.dao.paginateCache(cacheName, key, paginator, "select t.* " //
+				, " from tb_article t "
+						+ "where " + getPublicWhere() //
+						+ " and  t.folder_id = ? " //
+						+ " order by t.publish_time desc,t.update_time desc", folderId);
+		return articles;
+	}
 	/**
 	 * 获取栏目滚动图片
 	 * 
@@ -303,5 +359,57 @@ public class FrontCacheService extends BaseService {
 				+ " and t.approve_status = " + ArticleConstant.APPROVE_STATUS_PASS // 审核通过
 				+ " and t.type in (11,12) " // 查询状态为显示，类型是预览和正常的文章
 		;
+	}
+	/**
+	 * 返回栏目图片
+	 * 
+	 *@author zengw
+	 * 
+	 * 
+	 * @param folderId
+	 * @return
+	 */
+	public String getFolderImg(int folderId) {
+		String key = ("getFolderImg_" + folderId);
+		String sql = "select * from tb_folder t " //
+				+ " where "
+				+ " id = ? order by sort,create_time desc";
+		List<TbFolder> list = TbFolder.dao.findCache(cacheName, key, sql, folderId);
+		if(list.size()>0){
+			String ImageUrl = list.get(0).getImageUrl();
+			String ImageNetUrl = list.get(0).getImageNetUrl();
+			String imgUrl;
+			if(ImageUrl.equals(null)||ImageUrl==""){
+				imgUrl = ImageNetUrl;
+			}else{
+				imgUrl = ImageUrl;
+			}
+			return imgUrl;
+		}else{
+			return "";
+		}
+	}
+	/**
+	 * 返回栏目描述
+	 * 
+	 *@author zengw
+	 * 
+	 * @param paginator
+	 * @param folderId
+	 * @return
+	 */
+	public String getFolderContent(int folderId) {
+		String key = ("getFolderImg_" + folderId);
+		String sql = "select * from tb_folder t " //
+				+ " where "
+				+ " id = ? order by sort,create_time desc";
+		List<TbFolder> list = TbFolder.dao.findCache(cacheName, key, sql, folderId);
+		if(list.size()>0){
+			String content = list.get(0).getContent();
+			return content;
+		}else{
+			return "";
+		}
+		
 	}
 }

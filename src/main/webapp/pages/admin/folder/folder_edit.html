@@ -23,7 +23,7 @@ var headContent = {
 var bodyContent = {
 %>
 <form name="form1" action="" method="post" class="form-horizontal"
-		role="form" >
+	enctype="multipart/form-data" role="form" >
 	<input type="hidden" name="model.id" value="${model.id}" />
 	<table class="table">
 		<% // 列表头部 %>
@@ -73,6 +73,19 @@ var bodyContent = {
 				<label class="radio-inline">
 				  <input type="radio" name="model.status" id="" value="1"  ${model.status!=2?"checked":"" } > 显示
 				</label>
+			</td>
+		</tr>
+		<tr>
+			<td>图片
+				<% if(!strutil.isEmpty(model.image_url)||!strutil.isEmpty(model.image_net_url)){ %>
+					<a href="${flyfox.getImage(model)}" target="_blank" style="text-decoration:none;">
+						<img alt="图片" title="点击浏览" src="${flyfox.getImage(model)}" width="40" height="40">
+					</a>
+				<% } %></td>
+			<td colspan="3">
+				<input type="text" class="form-control" name="model.image_net_url" 
+					value="${model.image_net_url}" placeholder="网络图片url" />
+				<input type="file" accept="image/*" class="form-control" name="model.image_url" />
 			</td>
 		</tr>
 		<tr>

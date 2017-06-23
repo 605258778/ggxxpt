@@ -28,11 +28,11 @@ public class ApiForm {
 	private String method; // 方法名
 	private String version; // 版本
 	private String apiUser; // 调用用户
+	private int folderId; // 栏目ID
 	private String time; // 时间戳
 	private String checkSum; // 校验和
 	private String p; // 参数
 	private int siteId = 2; // 网站
-
 	
 
 	/**
@@ -62,6 +62,9 @@ public class ApiForm {
 		}
 		if (this.siteId != 0) {
 			treeMap.put("siteId", this.siteId + "");
+		}
+		if (this.folderId != 0) {
+			treeMap.put("folderId", this.folderId + "");
 		}
 		treeMap.put("apiUser", this.apiUser);
 		treeMap.put("time", this.time);
@@ -260,6 +263,13 @@ public class ApiForm {
 
 	public void setSiteId(int siteId) {
 		this.siteId = siteId;
+	}
+	public int getFolderId() {
+		return folderId;
+	}
+
+	public void setFolderId(int folderId) {
+		this.folderId = folderId;
 	}
 	@Override
 	public String toString() {

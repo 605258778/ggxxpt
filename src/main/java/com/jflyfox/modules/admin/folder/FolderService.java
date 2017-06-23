@@ -106,7 +106,7 @@ public class FolderService extends BaseService {
 	 */
 	public List<TbFolder> getFolders(int siteId) {
 		return TbFolder.dao.findCache(cacheName, "getFolders_" + siteId, //
-				"select * from tb_folder where site_id = ? order by sort,id ", siteId);
+				"select * from tb_folder where status = 1 and sort != 1 and site_id = ? order by sort,id ", siteId);
 	}
 
 	/**

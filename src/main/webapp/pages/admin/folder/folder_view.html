@@ -48,6 +48,19 @@ var bodyContent = {
 		</td> 
 	</tr>
 	<tr>
+		<td>图片</td>
+		<td>
+			<% if(!strutil.isEmpty(model.image_url)||!strutil.isEmpty(model.image_net_url)){ %>
+				<a href="${flyfox.getImage(model)}" target="_blank" style="text-decoration:none;">
+					<img alt="图片" title="点击浏览" src="${flyfox.getImage(model)}" width="40" height="40">
+				</a>
+				<!-- 
+				<br>${model.image_url}
+				 -->
+			<% } %>
+		</td>
+	</tr>
+	<tr>
 		<td>跳转类型</td>
 		<td>${flyfox.dictValue(model.type )  }</td>
 		<td>跳转地址</td>

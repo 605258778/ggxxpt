@@ -110,22 +110,32 @@ public class TemplateService extends BaseService {
 	 * @param folder_id
 	 * @return
 	 */
-	public Page<TbArticle> articlePageRecommend(int pageNo, int pageSize, int siteId) {
+	public static Page<TbArticle> articlePageRecommend(int pageNo, int pageSize, int siteId) {
 		return service.getRecommendArticle(new Paginator(pageNo, pageSize), siteId);
 	}
 
 	/**
 	 * 返回最新文章
 	 * 
-	 * 2015年5月24日 下午10:52:05 flyfox 369191470@qq.com
+	 * @author zengw
 	 * 
 	 * @param paginator
 	 * @return
 	 */
-	public Page<TbArticle> articlePageTop(int pageNo, int pageSize, int siteId) {
+	public static Page<TbArticle> articlePageTop(int pageNo, int pageSize, int siteId) {
 		return service.getNewArticle(new Paginator(pageNo, pageSize), siteId);
 	}
-
+	/**
+	 * 返回最新文章标题
+	 * 
+	 * @author zengw
+	 * 
+	 * @param paginator
+	 * @return
+	 */
+	public static Page<TbArticle> articlePageTopTitle(int pageNo, int pageSize, int siteId) {
+		return service.getNewArticleTitle(new Paginator(pageNo, pageSize), siteId);
+	}
 	/**
 	 * 返回文章列表
 	 * 
@@ -157,16 +167,28 @@ public class TemplateService extends BaseService {
 	/**
 	 * 返回文章列表
 	 * 
-	 * 2015年5月24日 下午10:52:05 flyfox 369191470@qq.com
+	 * @author zengw
 	 * 
 	 * @param paginator
 	 * @param folderId
 	 * @return
 	 */
-	public Page<TbArticle> articlePage(int pageNo, int pageSize, int folderId) {
+	public static Page<TbArticle> articlePage(int pageNo, int pageSize, int folderId) {
 		return service.getArticle(new Paginator(pageNo, pageSize), folderId);
 	}
-
+	/**
+	 * 返回文章标题列表
+	 * 
+	 * @author zengw
+	 * 
+	 * @param paginator
+	 * @param folderId
+	 * @return
+	 */
+	public static Page<TbArticle> articlePageTitle(int pageNo, int pageSize, int folderId) {
+		return service.getArticleTitle(new Paginator(pageNo, pageSize), folderId);
+	}
+	
 	/**
 	 * 返回文章列表不走缓存
 	 * 

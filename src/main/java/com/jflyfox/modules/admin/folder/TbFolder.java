@@ -2,6 +2,7 @@ package com.jflyfox.modules.admin.folder;
 
 import com.jflyfox.component.base.BaseProjectModel;
 import com.jflyfox.jfinal.component.annotation.ModelBind;
+import com.jflyfox.modules.admin.folderrollpicture.TbFolderRollPicture;
 
 @ModelBind(table = "tb_folder")
 public class TbFolder extends BaseProjectModel<TbFolder> {
@@ -33,6 +34,8 @@ public class TbFolder extends BaseProjectModel<TbFolder> {
 	private String UPDATE_TIME = "update_time"; // 更新时间
 	private String CREATE_TIME = "create_time"; // 创建时间
 	private String CREATE_ID = "create_id"; // 创建者
+	private String IMAGE_URL = "image_url"; // 图片路径
+	private String IMAGE_NET_URL = "image_net_url"; // 网络图片路径
 
 	public TbFolder setId(java.lang.Integer value) {
 		set(ID, value);
@@ -74,7 +77,7 @@ public class TbFolder extends BaseProjectModel<TbFolder> {
 		set(PATH, value);
 		return this;
 	}
-
+	
 	public java.lang.String getPath() {
 		return get(PATH);
 	}
@@ -181,6 +184,23 @@ public class TbFolder extends BaseProjectModel<TbFolder> {
 	public TbFolder setCreateTime(java.lang.String value) {
 		set(CREATE_TIME, value);
 		return this;
+	}
+	public TbFolder setImageUrl(java.lang.String value) {
+		set(IMAGE_URL, value);
+		return this;
+	}
+
+	public java.lang.String getImageUrl() {
+		return get(IMAGE_URL);
+	}
+
+	public TbFolder setImageNetUrl(java.lang.String value) {
+		set(IMAGE_NET_URL, value);
+		return this;
+	}
+
+	public java.lang.String getImageNetUrl() {
+		return get(IMAGE_NET_URL);
 	}
 
 	public java.lang.String getCreateTime() {

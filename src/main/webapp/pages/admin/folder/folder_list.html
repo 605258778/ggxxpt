@@ -203,7 +203,8 @@ var bodyContent = {
 					<th name="parent_id" class="sorting">父栏目</th>
 					<th name="`key`" class="sorting">urlkey</th> 
 					<th name="sort" class="sorting">排序</th> 
-					<th name="status" class="sorting">状态</th> 
+					<th name="status" class="sorting">状态</th>
+					<th>图片</th>  
 					<th name="type" class="sorting">类型</th> 
 					<th>地址</th> 
 					<th>说明</th> 
@@ -229,6 +230,13 @@ var bodyContent = {
 						显示
 						<%	} %>
 					</td> 
+					<td>
+					<% if(!strutil.isEmpty(item.image_url)||!strutil.isEmpty(item.image_net_url)){ %>
+						<a href="${flyfox.getImage(item)}" target="_blank" style="text-decoration:none;">
+							<img alt="图片" title="点击浏览" src="${flyfox.getImage(item)}" width="40" height="40">
+						</a>
+					<% } %>
+					</td>
 					<td>${flyfox.dictValue(item.type!'' )  }</td>
 							<td>${item.jump_url}</td> 
 					<td title="${item.content}">
