@@ -250,3 +250,4 @@ function delblog(id) {
 		form1.submit();
 	});
 }
+
