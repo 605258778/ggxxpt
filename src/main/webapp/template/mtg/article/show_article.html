@@ -40,7 +40,7 @@ var bodyContent = {
 
 	<div class="row">
 	<!-- 文章 -->
-	<div class="col-md-8">	
+	<div class="col-md-12">	
 	
 		<div class="panel panel-default">
 		 <div class="panel-body">
@@ -189,38 +189,7 @@ var bodyContent = {
 		</div>
 	</div>
 	</div>
-	
-	<!-- 信息列表 -->
-	<div class="col-md-4">	
-	
-		<div class="panel panel-default">
-		  <div class="panel-heading">
-			<h3 class="panel-title">相关文章<a class="more" href="${BASE_PATH }${flyfox.getMenu(folder.id)}">更多</a></h3>
-		  </div>
-		 	 <ul class="list-group">
-			  	<% for(item in articles.list){ %>
-					<li class="list-group-item">
-						<span class="badge">${flyfox.substr(item.publish_time,5,10) }</span>
-						<a href="${BASE_PATH }front/article/${item.id}.html" target="_blank" title="${item.title}">
-						<% if (strutil.length(item.title) > 18) { %>
-							${strutil.subStringTo(item.title, 0, 18)}...
-						<% 	} else { %>
-							${item.title}
-						<%  } %>
-						</a>
-					</li>
-				<% } %>
-			  </ul>
-		</div>
-		
-		<!-- 推荐文章 -->
-		<%  include("/template/mtg/includes/recommend.html"){} %>
-		
-		<!-- 友情链接 -->
-		<%  include("/template/mtg/includes/friendly.html"){} %>
 	</div>
-	</div>
-
 </div>
 	
 <%  include("/template/mtg/includes/footer.html"){} %>
