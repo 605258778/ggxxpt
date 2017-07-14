@@ -70,21 +70,6 @@ include("/template/mtg/includes/header_menu.html"){} %>
 	<div class="row">
 
 		<div class="col-md-8">
-			<% if(noticeList != null && noticeList.~size > 0) { %>
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">首页公告</h3>
-				</div>
-				<div class="panel-body">
-					<% for(item in noticeList){ %>
-					<p>
-						<span class="label label-info">${itemLP.index}</span> <a
-							href="${item.url}" target="_blank">${item.content}</a>
-					</p>
-					<% } %>
-				</div>
-			</div>
-			<% } %>
 			<!-- 旅游 -->
 			<div class="panel panel-default">
 				<div class="panel-heading">
@@ -115,19 +100,6 @@ include("/template/mtg/includes/header_menu.html"){} %>
 					</div>
 					<div class="row"><% } %> <% } %></div>
 
-				</div>
-			</div>
-
-			<!-- 地图 -->
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">地图</h3>
-				</div>
-				<div class="panel-body" style="padding: 0px;">
-					<div class="thumbnail">
-						<img width="100%" height="450"
-							src="http://api.map.baidu.com/staticimage?center=116.186394,39.907031&zoom=13&width=930&height=450&markers=116.109356,39.925625" />
-					</div>
 				</div>
 			</div>
 		</div>
