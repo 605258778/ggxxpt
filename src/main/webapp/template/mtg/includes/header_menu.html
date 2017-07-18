@@ -52,8 +52,10 @@ var taglist = temp.tagsPageByFolder(1, 5, 2).list;
 }
 </style>
 
-<div class="topnav">
+<div class="topnav row">
     <dl>
+    <div class="col-md-12">
+    	<div class="col-md-6">
     	<% for(item in friendlylinkList){ %>
         <dt>
             <a href="${item.url}" target="_blank">
@@ -65,21 +67,26 @@ var taglist = temp.tagsPageByFolder(1, 5, 2).list;
 			</a>
         </dt>
         <% } %>
+        </div>
+        <div class="col-md-4">
         <% if(isEmpty(session.session_user)){ %>
-			<dt style="margin-left: 200px;"><a href="${BASE_PATH }front/login.html">登录</a></dt>
+			<dt><a href="${BASE_PATH }front/login.html">登录</a></dt>
 			<dt class="${'regist'==folders_selected!''?'active':''}"><a href="${BASE_PATH }front/regist.html" >注册</a></dt>
 		<% } else { %>
-			<dt style="margin-left: 200px;" class="${'personhome'==folders_selected!''?'active':''}"><a href="${BASE_PATH }front/person.html" id="myhome" >我的空间</a></dt>
+			<dt class="${'personhome'==folders_selected!''?'active':''}"><a href="${BASE_PATH }front/person.html" id="myhome" >我的空间</a></dt>
 			<dt class="${'message'==folders_selected!''?'active':''}"><a href="${BASE_PATH }front/message.html" id="mymessage" >我的消息</a></dt>
 			<dt class="${'person'==folders_selected!''?'active':''}"><a href="${BASE_PATH }front/person/profile.html" id="personsetup" >个人设置</a></dt>
 			<dt class="${'logout'==folders_selected!''?'active':''}""><a href="${BASE_PATH }front/logout" id="logout" >退出</a></dt>
 		<% } %>
+		</div>
+		<div class="col-md-2">
         <dd>
             <a onclick="SetHome(window.location)" href="javascript:void(0)">设为首页</a>
             <em>|</em>
             <a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">收藏此页</a>
         </dd>
-      	
+        </div>
+      	</div>
     </dl>
 </div>
 <!-- 图片 -->
