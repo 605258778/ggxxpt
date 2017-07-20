@@ -59,8 +59,7 @@ public class ApiV100Logic extends BaseApiLogic implements IApiLogic {
 
 	@Override
 	public ApiResp article(ApiForm form) {
-		TbArticle article = service.getArticle(form.getInt("articleId"));
+		TbArticle article = service.getArticle(form.getArticleId());
 		return new ApiResp(form).addData("article", article);
 	}
-
 }

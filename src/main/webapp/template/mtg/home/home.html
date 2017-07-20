@@ -21,6 +21,35 @@ include("/template/mtg/includes/header.html"){} %>
 <meta name="baidu-site-verification" content="HoZ9m8VIaf" />
 <% }; %> <% var bodyContent = { %> <%
 include("/template/mtg/includes/header_menu.html"){} %>
+<script>
+$(function(){
+	$('.carousel').carousel({
+		interval: 2000
+	});
+	
+	// js加载避免优先级问题
+	$('.more').css('float','right').css('font-size','12px').css('color','green');
+	
+	// 最新新闻
+	$("#new_news_tab").on('mousemove',function(){
+		$(this).parent('li').addClass('active');
+		$("#new_dynamic_tab").parent('li').removeClass('active');
+		$('#new_news').show();
+		$('#new_dynamic').hide();
+		return false;
+	});
+	
+	// 最新动态
+	$("#new_dynamic_tab").on('mousemove',function(){
+		$(this).parent('li').addClass('active');
+		$("#new_news_tab").parent('li').removeClass('active');
+		$('#new_dynamic').show();
+		$('#new_news').hide();
+		return false;
+	});
+	
+});
+</script>
 <div class="container">
 	<div class="row">
 		<!--  新闻 -->

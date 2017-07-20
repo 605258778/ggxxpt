@@ -33,7 +33,16 @@ public class ApiForm {
 	private String checkSum; // 校验和
 	private String p; // 参数
 	private int siteId = 2; // 网站
+	private int articleId; // 文章ID
 	
+
+	public int getArticleId() {
+		return articleId;
+	}
+
+	public void setArticleId(int articleId) {
+		this.articleId = articleId;
+	}
 
 	/**
 	 * 获取分页信息

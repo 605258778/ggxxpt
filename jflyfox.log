@@ -1,412 +1,1129 @@
-1 [17/07/14 08:52:02:456][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
-479 [17/07/14 08:52:02:934][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
-584 [17/07/14 08:52:03:039][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15y9phd3ry5f15dc2|252d2ac0, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15y9phd3ry5f15dc2|252d2ac0, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
-1419 [17/07/14 08:52:03:874][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
-1457 [17/07/14 08:52:03:912][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
-1478 [17/07/14 08:52:03:933][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
-1483 [17/07/14 08:52:03:938][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
-1493 [17/07/14 08:52:03:948][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
-1510 [17/07/14 08:52:03:965][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
-1526 [17/07/14 08:52:03:981][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-1533 [17/07/14 08:52:03:988][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
-1537 [17/07/14 08:52:03:992][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
-147002 [17/07/14 08:54:29:457][qtp1163664780-25][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-750981 [17/07/14 09:04:33:436][qtp1163664780-21][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-1352013 [17/07/14 09:14:34:468][qtp1163664780-26][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-1952081 [17/07/14 09:24:34:536][qtp1163664780-21][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-2552084 [17/07/14 09:34:34:539][qtp1163664780-25][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-3152124 [17/07/14 09:44:34:579][qtp1163664780-25][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-3752163 [17/07/14 09:54:34:618][qtp1163664780-27][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-4235756 [17/07/14 10:02:38:211][qtp1163664780-25][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-4235761 [17/07/14 10:02:38:216][qtp1163664780-25][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-4235770 [17/07/14 10:02:38:225][qtp1163664780-26][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-4246856 [17/07/14 10:02:49:311][qtp1163664780-26][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-4259928 [17/07/14 10:03:02:383][qtp1163664780-26][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-4261301 [17/07/14 10:03:03:756][qtp1163664780-25][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-4262015 [17/07/14 10:03:04:470][qtp1163664780-21][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-4862205 [17/07/14 10:13:04:660][qtp1163664780-25][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-5462243 [17/07/14 10:23:04:698][qtp1163664780-21][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-6062283 [17/07/14 10:33:04:738][qtp1163664780-22][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-6454740 [17/07/14 10:39:37:195][qtp1163664780-28][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-7104141 [17/07/14 10:50:26:596][qtp1163664780-28][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-0 [17/07/14 10:58:33:780][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
-340 [17/07/14 10:58:34:120][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
-517 [17/07/14 10:58:34:297][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15y9phhmhg71n03aez|1f0f92f5, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15y9phhmhg71n03aez|1f0f92f5, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
-971 [17/07/14 10:58:34:751][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
-1009 [17/07/14 10:58:34:789][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
-1021 [17/07/14 10:58:34:801][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
-1025 [17/07/14 10:58:34:805][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
-1031 [17/07/14 10:58:34:811][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
-1034 [17/07/14 10:58:34:814][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
-1044 [17/07/14 10:58:34:824][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-1053 [17/07/14 10:58:34:833][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
-1055 [17/07/14 10:58:34:835][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
-0 [17/07/14 11:08:26:511][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
-249 [17/07/14 11:08:26:760][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
-328 [17/07/14 11:08:26:839][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15y9phhz6su1iaciva|252d2ac0, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15y9phhz6su1iaciva|252d2ac0, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
-659 [17/07/14 11:08:27:170][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
-690 [17/07/14 11:08:27:201][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
-706 [17/07/14 11:08:27:217][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
-706 [17/07/14 11:08:27:217][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
-706 [17/07/14 11:08:27:217][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
-706 [17/07/14 11:08:27:217][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
-721 [17/07/14 11:08:27:232][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-721 [17/07/14 11:08:27:232][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
-721 [17/07/14 11:08:27:232][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
-0 [17/07/14 11:12:15:522][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
-250 [17/07/14 11:12:15:772][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
-343 [17/07/14 11:12:15:865][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15y9phi43hu15ar49p|4b9b5da5, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15y9phi43hu15ar49p|4b9b5da5, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
-722 [17/07/14 11:12:16:244][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
-754 [17/07/14 11:12:16:276][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
-754 [17/07/14 11:12:16:276][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
-770 [17/07/14 11:12:16:292][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
-770 [17/07/14 11:12:16:292][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
-770 [17/07/14 11:12:16:292][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
-770 [17/07/14 11:12:16:292][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-785 [17/07/14 11:12:16:307][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
-785 [17/07/14 11:12:16:307][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
-0 [17/07/14 11:16:23:073][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
-250 [17/07/14 11:16:23:323][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
-359 [17/07/14 11:16:23:432][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15y9phi9eio5rug50|73e63b4d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15y9phi9eio5rug50|73e63b4d, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
-781 [17/07/14 11:16:23:854][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
-812 [17/07/14 11:16:23:885][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
-828 [17/07/14 11:16:23:901][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
-852 [17/07/14 11:16:23:925][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
-857 [17/07/14 11:16:23:930][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
-857 [17/07/14 11:16:23:930][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
-872 [17/07/14 11:16:23:945][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-872 [17/07/14 11:16:23:945][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
-872 [17/07/14 11:16:23:945][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
-0 [17/07/14 11:25:51:050][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
-249 [17/07/14 11:25:51:299][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
-343 [17/07/14 11:25:51:393][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15y9philkrt1mgu6sf|4b9b5da5, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15y9philkrt1mgu6sf|4b9b5da5, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
-733 [17/07/14 11:25:51:783][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
-764 [17/07/14 11:25:51:814][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
-780 [17/07/14 11:25:51:830][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
-780 [17/07/14 11:25:51:830][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
-780 [17/07/14 11:25:51:830][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
-780 [17/07/14 11:25:51:830][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
-796 [17/07/14 11:25:51:846][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-796 [17/07/14 11:25:51:846][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
-796 [17/07/14 11:25:51:846][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
-0 [17/07/14 11:29:25:579][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
-250 [17/07/14 11:29:25:829][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
-343 [17/07/14 11:29:25:922][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15y9phiq6aj1jcdmsx|5fe4848, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15y9phiq6aj1jcdmsx|5fe4848, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
-774 [17/07/14 11:29:26:353][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
-805 [17/07/14 11:29:26:384][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
-852 [17/07/14 11:29:26:431][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
-867 [17/07/14 11:29:26:446][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
-867 [17/07/14 11:29:26:446][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
-867 [17/07/14 11:29:26:446][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
-883 [17/07/14 11:29:26:462][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-883 [17/07/14 11:29:26:462][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
-898 [17/07/14 11:29:26:477][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
-0 [17/07/14 11:32:36:869][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
-273 [17/07/14 11:32:37:142][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
-417 [17/07/14 11:32:37:286][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15y9phiu9wej8oefo|532e00bd, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15y9phiu9wej8oefo|532e00bd, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
-969 [17/07/14 11:32:37:838][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
-1017 [17/07/14 11:32:37:886][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
-1047 [17/07/14 11:32:37:916][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
-1052 [17/07/14 11:32:37:921][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
-1062 [17/07/14 11:32:37:931][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
-1064 [17/07/14 11:32:37:933][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
-1071 [17/07/14 11:32:37:940][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-1071 [17/07/14 11:32:37:940][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
-1071 [17/07/14 11:32:37:940][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
-0 [17/07/14 11:36:27:513][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
-430 [17/07/14 11:36:27:943][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
-605 [17/07/14 11:36:28:118][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15y9phiz7vbdo2dio|b0d4873, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15y9phiz7vbdo2dio|b0d4873, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
-1049 [17/07/14 11:36:28:562][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
-1080 [17/07/14 11:36:28:593][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
-1111 [17/07/14 11:36:28:624][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
-1111 [17/07/14 11:36:28:624][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
-1142 [17/07/14 11:36:28:655][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
-1142 [17/07/14 11:36:28:655][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
-1158 [17/07/14 11:36:28:671][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-1158 [17/07/14 11:36:28:671][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
-1174 [17/07/14 11:36:28:687][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
-0 [17/07/14 11:37:47:641][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
-281 [17/07/14 11:37:47:922][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
-359 [17/07/14 11:37:48:000][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15y9phj0xp419klb6|587400a9, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15y9phj0xp419klb6|587400a9, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
-827 [17/07/14 11:37:48:468][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
-858 [17/07/14 11:37:48:499][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
-870 [17/07/14 11:37:48:511][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
-875 [17/07/14 11:37:48:516][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
-881 [17/07/14 11:37:48:522][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
-883 [17/07/14 11:37:48:524][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
-896 [17/07/14 11:37:48:537][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-901 [17/07/14 11:37:48:542][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
-903 [17/07/14 11:37:48:544][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
-26289 [17/07/14 11:38:13:930][qtp509858326-19][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-28220 [17/07/14 11:38:15:861][qtp509858326-25][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-29030 [17/07/14 11:38:16:671][qtp509858326-22][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-29452 [17/07/14 11:38:17:093][qtp509858326-19][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-29770 [17/07/14 11:38:17:411][qtp509858326-22][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-0 [17/07/14 14:12:28:409][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
-264 [17/07/14 14:12:28:673][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
-353 [17/07/14 14:12:28:762][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15y9phojus21faomkl|5bcfdaf3, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15y9phojus21faomkl|5bcfdaf3, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
-720 [17/07/14 14:12:29:129][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
-747 [17/07/14 14:12:29:156][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
-758 [17/07/14 14:12:29:167][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
-760 [17/07/14 14:12:29:169][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
-764 [17/07/14 14:12:29:173][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
-766 [17/07/14 14:12:29:175][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
-774 [17/07/14 14:12:29:183][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-780 [17/07/14 14:12:29:189][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
-783 [17/07/14 14:12:29:192][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
-1043 [17/07/14 14:12:29:452][qtp761973299-20][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-16651 [17/07/14 14:12:45:060][qtp761973299-21][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-17940 [17/07/14 14:12:46:349][qtp761973299-24][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-19558 [17/07/14 14:12:47:967][qtp761973299-23][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-20501 [17/07/14 14:12:48:910][qtp761973299-20][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-21306 [17/07/14 14:12:49:715][qtp761973299-25][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-22052 [17/07/14 14:12:50:461][qtp761973299-22][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-22643 [17/07/14 14:12:51:052][qtp761973299-25][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-0 [17/07/14 14:13:44:558][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
-219 [17/07/14 14:13:44:777][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
-297 [17/07/14 14:13:44:855][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15y9pholhj2lad44g|147aceec, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15y9pholhj2lad44g|147aceec, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
-640 [17/07/14 14:13:45:198][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
-655 [17/07/14 14:13:45:213][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
-672 [17/07/14 14:13:45:230][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
-688 [17/07/14 14:13:45:246][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
-688 [17/07/14 14:13:45:246][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
-688 [17/07/14 14:13:45:246][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
-688 [17/07/14 14:13:45:246][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-703 [17/07/14 14:13:45:261][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
-703 [17/07/14 14:13:45:261][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
-2329 [17/07/14 14:13:46:887][qtp1241182310-25][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-4700 [17/07/14 14:13:49:258][qtp1241182310-23][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-0 [17/07/14 14:15:09:213][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
-281 [17/07/14 14:15:09:494][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
-421 [17/07/14 14:15:09:634][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15y9phonaul1nfts9c|2cdb53d6, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15y9phonaul1nfts9c|2cdb53d6, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
-857 [17/07/14 14:15:10:070][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
-873 [17/07/14 14:15:10:086][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
-889 [17/07/14 14:15:10:102][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
-904 [17/07/14 14:15:10:117][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
-904 [17/07/14 14:15:10:117][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
-904 [17/07/14 14:15:10:117][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
-921 [17/07/14 14:15:10:134][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-921 [17/07/14 14:15:10:134][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
-921 [17/07/14 14:15:10:134][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
-4215 [17/07/14 14:15:13:428][qtp1326413897-26][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-10517 [17/07/14 14:15:19:730][qtp1326413897-26][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-11514 [17/07/14 14:15:20:727][qtp1326413897-22][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-0 [17/07/14 14:19:30:741][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
-489 [17/07/14 14:19:31:230][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
-644 [17/07/14 14:19:31:385][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15y9phoswo41rdo3u8|16c1345b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15y9phoswo41rdo3u8|16c1345b, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
-1139 [17/07/14 14:19:31:880][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
-1174 [17/07/14 14:19:31:915][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
-1188 [17/07/14 14:19:31:929][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
-1193 [17/07/14 14:19:31:934][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
-1214 [17/07/14 14:19:31:955][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
-1219 [17/07/14 14:19:31:960][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
-1237 [17/07/14 14:19:31:978][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-1245 [17/07/14 14:19:31:986][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
-1254 [17/07/14 14:19:31:995][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
-3654 [17/07/14 14:19:34:395][qtp1002406942-28][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-6473 [17/07/14 14:19:37:214][qtp1002406942-22][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-7207 [17/07/14 14:19:37:948][qtp1002406942-26][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-7675 [17/07/14 14:19:38:416][qtp1002406942-22][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-7981 [17/07/14 14:19:38:722][qtp1002406942-27][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-0 [17/07/14 14:23:49:923][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
-383 [17/07/14 14:23:50:306][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
-499 [17/07/14 14:23:50:422][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15y9phoygn3mpy9fq|278cbf5a, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15y9phoygn3mpy9fq|278cbf5a, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
-890 [17/07/14 14:23:50:813][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
-905 [17/07/14 14:23:50:828][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
-921 [17/07/14 14:23:50:844][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
-921 [17/07/14 14:23:50:844][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
-937 [17/07/14 14:23:50:860][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
-937 [17/07/14 14:23:50:860][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
-952 [17/07/14 14:23:50:875][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-952 [17/07/14 14:23:50:875][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
-968 [17/07/14 14:23:50:891][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
-11813 [17/07/14 14:24:01:736][qtp1326413897-24][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-16355 [17/07/14 14:24:06:278][qtp1326413897-27][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-217458 [17/07/14 14:27:27:381][qtp1326413897-25][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-219590 [17/07/14 14:27:29:513][qtp1326413897-27][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-220570 [17/07/14 14:27:30:493][qtp1326413897-24][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-220860 [17/07/14 14:27:30:783][qtp1326413897-25][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-221095 [17/07/14 14:27:31:018][qtp1326413897-21][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-221357 [17/07/14 14:27:31:280][qtp1326413897-27][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-221572 [17/07/14 14:27:31:495][qtp1326413897-26][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-221795 [17/07/14 14:27:31:718][qtp1326413897-25][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-221970 [17/07/14 14:27:31:893][qtp1326413897-24][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-222218 [17/07/14 14:27:32:141][qtp1326413897-28][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-0 [17/07/14 14:34:13:099][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
-332 [17/07/14 14:34:13:431][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
-431 [17/07/14 14:34:13:530][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15y9phpbthn2ueqzg|38347345, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15y9phpbthn2ueqzg|38347345, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
-830 [17/07/14 14:34:13:929][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
-861 [17/07/14 14:34:13:960][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
-877 [17/07/14 14:34:13:976][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
-892 [17/07/14 14:34:13:991][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
-892 [17/07/14 14:34:13:991][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
-892 [17/07/14 14:34:13:991][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
-908 [17/07/14 14:34:14:007][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-908 [17/07/14 14:34:14:007][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
-908 [17/07/14 14:34:14:007][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
-6914 [17/07/14 14:34:20:013][qtp564893839-24][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-0 [17/07/14 14:35:30:959][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
-219 [17/07/14 14:35:31:178][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
-297 [17/07/14 14:35:31:256][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15y9phpdhjzy1adit|2c8f65da, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15y9phpdhjzy1adit|2c8f65da, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
-562 [17/07/14 14:35:31:521][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
-597 [17/07/14 14:35:31:556][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
-613 [17/07/14 14:35:31:572][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
-613 [17/07/14 14:35:31:572][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
-613 [17/07/14 14:35:31:572][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
-613 [17/07/14 14:35:31:572][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
-628 [17/07/14 14:35:31:587][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-628 [17/07/14 14:35:31:587][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
-644 [17/07/14 14:35:31:603][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
-4747 [17/07/14 14:35:35:706][qtp1859823482-22][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-8400 [17/07/14 14:35:39:359][qtp1859823482-25][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-0 [17/07/14 14:37:06:953][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
-280 [17/07/14 14:37:07:233][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
-405 [17/07/14 14:37:07:358][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15y9phpfjmh1l3fen4|1f381eaf, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15y9phpfjmh1l3fen4|1f381eaf, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
-950 [17/07/14 14:37:07:903][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
-991 [17/07/14 14:37:07:944][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
-1013 [17/07/14 14:37:07:966][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
-1031 [17/07/14 14:37:07:984][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
-1058 [17/07/14 14:37:08:011][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
-1062 [17/07/14 14:37:08:015][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
-1072 [17/07/14 14:37:08:025][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-1091 [17/07/14 14:37:08:044][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
-1098 [17/07/14 14:37:08:051][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
-4406 [17/07/14 14:37:11:359][qtp1241182310-24][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-13372 [17/07/14 14:37:20:325][qtp1241182310-21][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-15031 [17/07/14 14:37:21:984][qtp1241182310-26][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-1 [17/07/14 14:40:18:425][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
-274 [17/07/14 14:40:18:698][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
-377 [17/07/14 14:40:18:801][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15y9phpjndfweaosz|1f0f92f5, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15y9phpjndfweaosz|1f0f92f5, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
-791 [17/07/14 14:40:19:215][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
-822 [17/07/14 14:40:19:246][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
-838 [17/07/14 14:40:19:262][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
-853 [17/07/14 14:40:19:277][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
-853 [17/07/14 14:40:19:277][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
-853 [17/07/14 14:40:19:277][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
-869 [17/07/14 14:40:19:293][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-884 [17/07/14 14:40:19:308][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
-884 [17/07/14 14:40:19:308][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
-27875 [17/07/14 14:40:46:299][qtp1658704411-20][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-0 [17/07/14 14:47:43:306][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
-250 [17/07/14 14:47:43:556][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
-315 [17/07/14 14:47:43:621][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15y9phpt6nexsmmd1|2c8f65da, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15y9phpt6nexsmmd1|2c8f65da, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
-596 [17/07/14 14:47:43:902][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
-627 [17/07/14 14:47:43:933][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
-644 [17/07/14 14:47:43:950][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
-644 [17/07/14 14:47:43:950][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
-644 [17/07/14 14:47:43:950][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
-644 [17/07/14 14:47:43:950][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
-660 [17/07/14 14:47:43:966][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-675 [17/07/14 14:47:43:981][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
-675 [17/07/14 14:47:43:981][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
-3549 [17/07/14 14:47:46:855][qtp1859823482-25][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-6056 [17/07/14 14:47:49:362][qtp1859823482-22][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-7093 [17/07/14 14:47:50:399][qtp1859823482-23][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-7747 [17/07/14 14:47:51:053][qtp1859823482-25][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-8674 [17/07/14 14:47:51:980][qtp1859823482-23][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-9508 [17/07/14 14:47:52:814][qtp1859823482-19][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-0 [17/07/14 14:51:35:775][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
-218 [17/07/14 14:51:35:993][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
-327 [17/07/14 14:51:36:102][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15y9phpy60e14z8b72|66acaa54, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15y9phpy60e14z8b72|66acaa54, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
-717 [17/07/14 14:51:36:492][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
-764 [17/07/14 14:51:36:539][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
-780 [17/07/14 14:51:36:555][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
-780 [17/07/14 14:51:36:555][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
-796 [17/07/14 14:51:36:571][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
-798 [17/07/14 14:51:36:573][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
-804 [17/07/14 14:51:36:579][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-804 [17/07/14 14:51:36:579][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
-804 [17/07/14 14:51:36:579][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
-8560 [17/07/14 14:51:44:335][qtp1010434098-21][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-344915 [17/07/14 14:57:20:690][qtp1010434098-21][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-344920 [17/07/14 14:57:20:695][qtp1010434098-21][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-0 [17/07/14 14:59:15:693][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
-280 [17/07/14 14:59:15:973][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
-422 [17/07/14 14:59:16:115][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15y9phq80vw14ejmkg|8aafd70, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15y9phq80vw14ejmkg|8aafd70, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
-950 [17/07/14 14:59:16:643][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
-982 [17/07/14 14:59:16:675][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
-997 [17/07/14 14:59:16:690][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
-1002 [17/07/14 14:59:16:695][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
-1011 [17/07/14 14:59:16:704][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
-1014 [17/07/14 14:59:16:707][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
-1027 [17/07/14 14:59:16:720][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-1032 [17/07/14 14:59:16:725][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
-1036 [17/07/14 14:59:16:729][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
-0 [17/07/14 15:00:09:631][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
-281 [17/07/14 15:00:09:912][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
-359 [17/07/14 15:00:09:990][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15y9phq96im1chbqp4|2c8f65da, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15y9phq96im1chbqp4|2c8f65da, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
-780 [17/07/14 15:00:10:411][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
-796 [17/07/14 15:00:10:427][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
-812 [17/07/14 15:00:10:443][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
-812 [17/07/14 15:00:10:443][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
-812 [17/07/14 15:00:10:443][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
-828 [17/07/14 15:00:10:459][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
-828 [17/07/14 15:00:10:459][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-828 [17/07/14 15:00:10:459][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
-843 [17/07/14 15:00:10:474][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
-0 [17/07/14 15:00:48:204][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
-281 [17/07/14 15:00:48:485][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
-374 [17/07/14 15:00:48:578][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15y9phqa0a31iamcnp|2ba4b32b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15y9phqa0a31iamcnp|2ba4b32b, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
-807 [17/07/14 15:00:49:011][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
-854 [17/07/14 15:00:49:058][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
-855 [17/07/14 15:00:49:059][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
-871 [17/07/14 15:00:49:075][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
-871 [17/07/14 15:00:49:075][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
-886 [17/07/14 15:00:49:090][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
-886 [17/07/14 15:00:49:090][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-902 [17/07/14 15:00:49:106][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
-902 [17/07/14 15:00:49:106][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
-0 [17/07/14 15:01:38:812][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
-265 [17/07/14 15:01:39:077][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
-343 [17/07/14 15:01:39:155][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15y9phqb3bv1ykx748|4b9b5da5, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15y9phqb3bv1ykx748|4b9b5da5, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
-748 [17/07/14 15:01:39:560][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
-781 [17/07/14 15:01:39:593][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
-781 [17/07/14 15:01:39:593][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
-796 [17/07/14 15:01:39:608][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
-796 [17/07/14 15:01:39:608][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
-796 [17/07/14 15:01:39:608][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
-812 [17/07/14 15:01:39:624][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-812 [17/07/14 15:01:39:624][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
-812 [17/07/14 15:01:39:624][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
-27847 [17/07/14 15:02:06:659][qtp691096777-22][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-0 [17/07/14 15:05:57:834][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
-356 [17/07/14 15:05:58:190][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
-493 [17/07/14 15:05:58:327][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15y9phqgn6i1y5yeqe|7a79d99c, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15y9phqgn6i1y5yeqe|7a79d99c, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
-981 [17/07/14 15:05:58:815][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
-1010 [17/07/14 15:05:58:844][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
-1039 [17/07/14 15:05:58:873][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
-1044 [17/07/14 15:05:58:878][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
-1050 [17/07/14 15:05:58:884][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
-1053 [17/07/14 15:05:58:887][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
-1065 [17/07/14 15:05:58:899][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-1073 [17/07/14 15:05:58:907][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
-1083 [17/07/14 15:05:58:917][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
-5079 [17/07/14 15:06:02:913][qtp125549276-22][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
-707006 [17/07/14 15:17:44:840][qtp125549276-24][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-1309624 [17/07/14 15:27:47:458][qtp125549276-26][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-1609786 [17/07/14 15:32:47:620][qtp125549276-22][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-1927867 [17/07/14 15:38:05:701][qtp125549276-25][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-0 [17/07/14 15:39:18:576][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
-296 [17/07/14 15:39:18:872][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
-421 [17/07/14 15:39:18:997][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15y9phrniz31yrrrmd|62cb977a, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15y9phrniz31yrrrmd|62cb977a, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
-842 [17/07/14 15:39:19:418][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
-858 [17/07/14 15:39:19:434][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
-873 [17/07/14 15:39:19:449][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
-873 [17/07/14 15:39:19:449][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
-890 [17/07/14 15:39:19:466][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
-890 [17/07/14 15:39:19:466][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
-906 [17/07/14 15:39:19:482][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-906 [17/07/14 15:39:19:482][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
-906 [17/07/14 15:39:19:482][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
-0 [17/07/14 15:41:52:452][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
-234 [17/07/14 15:41:52:686][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
-290 [17/07/14 15:41:52:742][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15y9phrqtpf1e4o6cv|2c8f65da, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15y9phrqtpf1e4o6cv|2c8f65da, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
-602 [17/07/14 15:41:53:054][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
-634 [17/07/14 15:41:53:086][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
-650 [17/07/14 15:41:53:102][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
-650 [17/07/14 15:41:53:102][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
-666 [17/07/14 15:41:53:118][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
-666 [17/07/14 15:41:53:118][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
-681 [17/07/14 15:41:53:133][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
-681 [17/07/14 15:41:53:133][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
-681 [17/07/14 15:41:53:133][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
+0 [17/07/20 08:37:36:689][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
+233 [17/07/20 08:37:36:922][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+347 [17/07/20 08:37:37:036][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kflt9ppx8bwq1wbesmz|61d150af, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt9ppx8bwq1wbesmz|61d150af, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+1067 [17/07/20 08:37:37:756][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
+1092 [17/07/20 08:37:37:781][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
+1109 [17/07/20 08:37:37:798][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
+1116 [17/07/20 08:37:37:805][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
+1121 [17/07/20 08:37:37:810][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
+1122 [17/07/20 08:37:37:811][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
+1134 [17/07/20 08:37:37:823][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
+1144 [17/07/20 08:37:37:833][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
+1146 [17/07/20 08:37:37:835][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
+0 [17/07/20 09:45:27:215][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
+304 [17/07/20 09:45:27:519][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+375 [17/07/20 09:45:27:590][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge9e89ppznks29pii6a|5bcfdaf3, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge9e89ppznks29pii6a|5bcfdaf3, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+1062 [17/07/20 09:45:28:277][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
+1091 [17/07/20 09:45:28:306][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
+1104 [17/07/20 09:45:28:319][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
+1107 [17/07/20 09:45:28:322][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
+1115 [17/07/20 09:45:28:330][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
+1116 [17/07/20 09:45:28:331][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
+1132 [17/07/20 09:45:28:347][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
+1145 [17/07/20 09:45:28:360][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
+1149 [17/07/20 09:45:28:364][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
+476277 [17/07/20 09:53:23:492][qtp761973299-21][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
+476278 [17/07/20 09:53:23:493][qtp761973299-20][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
+476923 [17/07/20 09:53:24:138][qtp761973299-20][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+476930 [17/07/20 09:53:24:145][qtp761973299-21][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+493299 [17/07/20 09:53:40:514][qtp761973299-24][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+493465 [17/07/20 09:53:40:680][qtp761973299-21][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+493474 [17/07/20 09:53:40:689][qtp761973299-21][com.jflyfox.jfinal.component.interceptor.ExceptionInterceptor-intercept] 异常：
+java.lang.RuntimeException: java.lang.NumberFormatException: For input string: "2/before/4258"
+	at com.jfinal.core.Injector.injectBean(Injector.java:78)
+	at com.jfinal.core.Controller.getBean(Controller.java:725)
+	at com.jflyfox.api.interceptor.ApiInterceptor.intercept(ApiInterceptor.java:30)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.CommonInterceptor.intercept(CommonInterceptor.java:45)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.SiteInterceptor.intercept(SiteInterceptor.java:49)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.system.user.UserInterceptor.intercept(UserInterceptor.java:84)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.UpdateCacheInterceptor.intercept(UpdateCacheInterceptor.java:44)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.PageViewInterceptor.intercept(PageViewInterceptor.java:33)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.UserKeyInterceptor.intercept(UserKeyInterceptor.java:28)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.JflyfoxInterceptor.intercept(JflyfoxInterceptor.java:26)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.SessionAttrInterceptor.intercept(SessionAttrInterceptor.java:48)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jfinal.ext.interceptor.SessionInViewInterceptor.intercept(SessionInViewInterceptor.java:44)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.ExceptionInterceptor.intercept(ExceptionInterceptor.java:38)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:74)
+	at com.jflyfox.jfinal.component.handler.CurrentPathHandler.handle(CurrentPathHandler.java:53)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jflyfox.jfinal.component.handler.BasePathHandler.handle(BasePathHandler.java:48)
+	at com.jflyfox.jfinal.component.handler.HtmlHandler.handle(HtmlHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:74)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1338)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:484)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1065)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:413)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:192)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:999)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:250)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:149)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:350)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:454)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:890)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:944)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:630)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:606)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:46)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:603)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:538)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NumberFormatException: For input string: "2/before/4258"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at com.jfinal.core.TypeConverter.convert(TypeConverter.java:58)
+	at com.jfinal.core.Injector.injectBean(Injector.java:74)
+	... 54 more
+503355 [17/07/20 09:53:50:570][qtp761973299-25][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1156664 [17/07/20 10:04:43:879][qtp761973299-22][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
+1156667 [17/07/20 10:04:43:882][qtp761973299-22][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1156675 [17/07/20 10:04:43:890][qtp761973299-20][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1228822 [17/07/20 10:05:56:037][qtp761973299-22][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1228826 [17/07/20 10:05:56:041][qtp761973299-23][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1255639 [17/07/20 10:06:22:854][qtp761973299-20][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1255654 [17/07/20 10:06:22:869][qtp761973299-23][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1259621 [17/07/20 10:06:26:836][qtp761973299-23][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1259684 [17/07/20 10:06:26:899][qtp761973299-25][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1259886 [17/07/20 10:06:27:101][qtp761973299-21][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1259888 [17/07/20 10:06:27:103][qtp761973299-21][com.jflyfox.jfinal.component.interceptor.ExceptionInterceptor-intercept] 异常：
+java.lang.RuntimeException: java.lang.NumberFormatException: For input string: "2/before/4258"
+	at com.jfinal.core.Injector.injectBean(Injector.java:78)
+	at com.jfinal.core.Controller.getBean(Controller.java:725)
+	at com.jflyfox.api.interceptor.ApiInterceptor.intercept(ApiInterceptor.java:30)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.CommonInterceptor.intercept(CommonInterceptor.java:45)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.SiteInterceptor.intercept(SiteInterceptor.java:49)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.system.user.UserInterceptor.intercept(UserInterceptor.java:84)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.UpdateCacheInterceptor.intercept(UpdateCacheInterceptor.java:44)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.PageViewInterceptor.intercept(PageViewInterceptor.java:33)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.UserKeyInterceptor.intercept(UserKeyInterceptor.java:28)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.JflyfoxInterceptor.intercept(JflyfoxInterceptor.java:26)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.SessionAttrInterceptor.intercept(SessionAttrInterceptor.java:48)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jfinal.ext.interceptor.SessionInViewInterceptor.intercept(SessionInViewInterceptor.java:44)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.ExceptionInterceptor.intercept(ExceptionInterceptor.java:38)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:74)
+	at com.jflyfox.jfinal.component.handler.CurrentPathHandler.handle(CurrentPathHandler.java:53)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jflyfox.jfinal.component.handler.BasePathHandler.handle(BasePathHandler.java:48)
+	at com.jflyfox.jfinal.component.handler.HtmlHandler.handle(HtmlHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:74)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1338)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:484)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1065)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:413)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:192)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:999)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:250)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:149)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:350)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:454)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:890)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:944)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:630)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:606)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:46)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:603)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:538)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NumberFormatException: For input string: "2/before/4258"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at com.jfinal.core.TypeConverter.convert(TypeConverter.java:58)
+	at com.jfinal.core.Injector.injectBean(Injector.java:74)
+	... 54 more
+1261407 [17/07/20 10:06:28:622][qtp761973299-23][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1264455 [17/07/20 10:06:31:670][qtp761973299-20][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1264491 [17/07/20 10:06:31:706][qtp761973299-23][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1266216 [17/07/20 10:06:33:431][qtp761973299-22][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1266217 [17/07/20 10:06:33:432][qtp761973299-22][com.jflyfox.jfinal.component.interceptor.ExceptionInterceptor-intercept] 异常：
+java.lang.RuntimeException: java.lang.NumberFormatException: For input string: "3/before/4253"
+	at com.jfinal.core.Injector.injectBean(Injector.java:78)
+	at com.jfinal.core.Controller.getBean(Controller.java:725)
+	at com.jflyfox.api.interceptor.ApiInterceptor.intercept(ApiInterceptor.java:30)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.CommonInterceptor.intercept(CommonInterceptor.java:45)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.SiteInterceptor.intercept(SiteInterceptor.java:49)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.system.user.UserInterceptor.intercept(UserInterceptor.java:84)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.UpdateCacheInterceptor.intercept(UpdateCacheInterceptor.java:44)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.PageViewInterceptor.intercept(PageViewInterceptor.java:33)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.UserKeyInterceptor.intercept(UserKeyInterceptor.java:28)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.JflyfoxInterceptor.intercept(JflyfoxInterceptor.java:26)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.SessionAttrInterceptor.intercept(SessionAttrInterceptor.java:48)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jfinal.ext.interceptor.SessionInViewInterceptor.intercept(SessionInViewInterceptor.java:44)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.ExceptionInterceptor.intercept(ExceptionInterceptor.java:38)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:74)
+	at com.jflyfox.jfinal.component.handler.CurrentPathHandler.handle(CurrentPathHandler.java:53)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jflyfox.jfinal.component.handler.BasePathHandler.handle(BasePathHandler.java:48)
+	at com.jflyfox.jfinal.component.handler.HtmlHandler.handle(HtmlHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:74)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1338)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:484)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1065)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:413)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:192)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:999)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:250)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:149)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:350)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:454)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:890)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:944)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:630)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:606)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:46)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:603)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:538)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NumberFormatException: For input string: "3/before/4253"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at com.jfinal.core.TypeConverter.convert(TypeConverter.java:58)
+	at com.jfinal.core.Injector.injectBean(Injector.java:74)
+	... 54 more
+1267674 [17/07/20 10:06:34:889][qtp761973299-23][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1698163 [17/07/20 10:13:45:378][qtp761973299-23][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
+1698206 [17/07/20 10:13:45:421][qtp761973299-23][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1708273 [17/07/20 10:13:55:488][qtp761973299-20][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1708274 [17/07/20 10:13:55:489][qtp761973299-20][com.jflyfox.jfinal.component.interceptor.ExceptionInterceptor-intercept] 异常：
+java.lang.RuntimeException: java.lang.NumberFormatException: For input string: "3/before/4253"
+	at com.jfinal.core.Injector.injectBean(Injector.java:78)
+	at com.jfinal.core.Controller.getBean(Controller.java:725)
+	at com.jflyfox.api.interceptor.ApiInterceptor.intercept(ApiInterceptor.java:30)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.CommonInterceptor.intercept(CommonInterceptor.java:45)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.SiteInterceptor.intercept(SiteInterceptor.java:49)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.system.user.UserInterceptor.intercept(UserInterceptor.java:84)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.UpdateCacheInterceptor.intercept(UpdateCacheInterceptor.java:44)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.PageViewInterceptor.intercept(PageViewInterceptor.java:33)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.UserKeyInterceptor.intercept(UserKeyInterceptor.java:28)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.JflyfoxInterceptor.intercept(JflyfoxInterceptor.java:26)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.SessionAttrInterceptor.intercept(SessionAttrInterceptor.java:48)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jfinal.ext.interceptor.SessionInViewInterceptor.intercept(SessionInViewInterceptor.java:44)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.ExceptionInterceptor.intercept(ExceptionInterceptor.java:38)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:74)
+	at com.jflyfox.jfinal.component.handler.CurrentPathHandler.handle(CurrentPathHandler.java:53)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jflyfox.jfinal.component.handler.BasePathHandler.handle(BasePathHandler.java:48)
+	at com.jflyfox.jfinal.component.handler.HtmlHandler.handle(HtmlHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:74)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1338)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:484)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1065)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:413)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:192)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:999)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:250)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:149)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:350)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:454)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:890)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:944)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:630)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:606)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:46)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:603)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:538)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NumberFormatException: For input string: "3/before/4253"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at com.jfinal.core.TypeConverter.convert(TypeConverter.java:58)
+	at com.jfinal.core.Injector.injectBean(Injector.java:74)
+	... 54 more
+4420985 [17/07/20 10:59:08:200][qtp761973299-23][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
+4420985 [17/07/20 10:59:08:200][qtp761973299-21][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
+4421023 [17/07/20 10:59:08:238][qtp761973299-21][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+4421093 [17/07/20 10:59:08:308][qtp761973299-23][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+4426512 [17/07/20 10:59:13:727][qtp761973299-24][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+4426622 [17/07/20 10:59:13:837][qtp761973299-25][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+4427080 [17/07/20 10:59:14:295][qtp761973299-21][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+4427082 [17/07/20 10:59:14:297][qtp761973299-21][com.jflyfox.jfinal.component.interceptor.ExceptionInterceptor-intercept] 异常：
+java.lang.RuntimeException: java.lang.NumberFormatException: For input string: "2/before/4258"
+	at com.jfinal.core.Injector.injectBean(Injector.java:78)
+	at com.jfinal.core.Controller.getBean(Controller.java:725)
+	at com.jflyfox.api.interceptor.ApiInterceptor.intercept(ApiInterceptor.java:30)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.CommonInterceptor.intercept(CommonInterceptor.java:45)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.SiteInterceptor.intercept(SiteInterceptor.java:49)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.system.user.UserInterceptor.intercept(UserInterceptor.java:84)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.UpdateCacheInterceptor.intercept(UpdateCacheInterceptor.java:44)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.PageViewInterceptor.intercept(PageViewInterceptor.java:33)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.UserKeyInterceptor.intercept(UserKeyInterceptor.java:28)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.JflyfoxInterceptor.intercept(JflyfoxInterceptor.java:26)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.SessionAttrInterceptor.intercept(SessionAttrInterceptor.java:48)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jfinal.ext.interceptor.SessionInViewInterceptor.intercept(SessionInViewInterceptor.java:44)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.ExceptionInterceptor.intercept(ExceptionInterceptor.java:38)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:74)
+	at com.jflyfox.jfinal.component.handler.CurrentPathHandler.handle(CurrentPathHandler.java:53)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jflyfox.jfinal.component.handler.BasePathHandler.handle(BasePathHandler.java:48)
+	at com.jflyfox.jfinal.component.handler.HtmlHandler.handle(HtmlHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:74)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1338)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:484)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1065)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:413)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:192)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:999)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:250)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:149)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:350)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:454)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:890)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:944)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:630)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:606)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:46)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:603)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:538)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NumberFormatException: For input string: "2/before/4258"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at com.jfinal.core.TypeConverter.convert(TypeConverter.java:58)
+	at com.jfinal.core.Injector.injectBean(Injector.java:74)
+	... 54 more
+4428749 [17/07/20 10:59:15:964][qtp761973299-24][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+4430119 [17/07/20 10:59:17:334][qtp761973299-22][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+4430233 [17/07/20 10:59:17:448][qtp761973299-20][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+4430237 [17/07/20 10:59:17:452][qtp761973299-20][com.jflyfox.jfinal.component.interceptor.ExceptionInterceptor-intercept] 异常：
+java.lang.RuntimeException: java.lang.NumberFormatException: For input string: "2/before/4258"
+	at com.jfinal.core.Injector.injectBean(Injector.java:78)
+	at com.jfinal.core.Controller.getBean(Controller.java:725)
+	at com.jflyfox.api.interceptor.ApiInterceptor.intercept(ApiInterceptor.java:30)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.CommonInterceptor.intercept(CommonInterceptor.java:45)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.SiteInterceptor.intercept(SiteInterceptor.java:49)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.system.user.UserInterceptor.intercept(UserInterceptor.java:84)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.UpdateCacheInterceptor.intercept(UpdateCacheInterceptor.java:44)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.PageViewInterceptor.intercept(PageViewInterceptor.java:33)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.UserKeyInterceptor.intercept(UserKeyInterceptor.java:28)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.JflyfoxInterceptor.intercept(JflyfoxInterceptor.java:26)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.SessionAttrInterceptor.intercept(SessionAttrInterceptor.java:48)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jfinal.ext.interceptor.SessionInViewInterceptor.intercept(SessionInViewInterceptor.java:44)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.ExceptionInterceptor.intercept(ExceptionInterceptor.java:38)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:74)
+	at com.jflyfox.jfinal.component.handler.CurrentPathHandler.handle(CurrentPathHandler.java:53)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jflyfox.jfinal.component.handler.BasePathHandler.handle(BasePathHandler.java:48)
+	at com.jflyfox.jfinal.component.handler.HtmlHandler.handle(HtmlHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:74)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1338)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:484)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1065)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:413)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:192)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:999)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:250)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:149)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:350)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:454)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:890)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:944)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:630)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:606)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:46)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:603)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:538)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NumberFormatException: For input string: "2/before/4258"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at com.jfinal.core.TypeConverter.convert(TypeConverter.java:58)
+	at com.jfinal.core.Injector.injectBean(Injector.java:74)
+	... 54 more
+4441806 [17/07/20 10:59:29:021][qtp761973299-23][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+4441808 [17/07/20 10:59:29:023][qtp761973299-22][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+4444934 [17/07/20 10:59:32:149][qtp761973299-22][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+4469001 [17/07/20 10:59:56:216][qtp761973299-23][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+4471366 [17/07/20 10:59:58:581][qtp761973299-22][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+4471490 [17/07/20 10:59:58:705][qtp761973299-20][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+4474065 [17/07/20 11:00:01:280][qtp761973299-20][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+4474066 [17/07/20 11:00:01:281][qtp761973299-20][com.jflyfox.jfinal.component.interceptor.ExceptionInterceptor-intercept] 异常：
+java.lang.RuntimeException: java.lang.NumberFormatException: For input string: "4/before/4255"
+	at com.jfinal.core.Injector.injectBean(Injector.java:78)
+	at com.jfinal.core.Controller.getBean(Controller.java:725)
+	at com.jflyfox.api.interceptor.ApiInterceptor.intercept(ApiInterceptor.java:30)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.CommonInterceptor.intercept(CommonInterceptor.java:45)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.SiteInterceptor.intercept(SiteInterceptor.java:49)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.system.user.UserInterceptor.intercept(UserInterceptor.java:84)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.UpdateCacheInterceptor.intercept(UpdateCacheInterceptor.java:44)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.PageViewInterceptor.intercept(PageViewInterceptor.java:33)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.UserKeyInterceptor.intercept(UserKeyInterceptor.java:28)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.JflyfoxInterceptor.intercept(JflyfoxInterceptor.java:26)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.SessionAttrInterceptor.intercept(SessionAttrInterceptor.java:48)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jfinal.ext.interceptor.SessionInViewInterceptor.intercept(SessionInViewInterceptor.java:44)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.ExceptionInterceptor.intercept(ExceptionInterceptor.java:38)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:74)
+	at com.jflyfox.jfinal.component.handler.CurrentPathHandler.handle(CurrentPathHandler.java:53)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jflyfox.jfinal.component.handler.BasePathHandler.handle(BasePathHandler.java:48)
+	at com.jflyfox.jfinal.component.handler.HtmlHandler.handle(HtmlHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:74)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1338)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:484)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1065)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:413)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:192)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:999)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:250)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:149)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:350)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:454)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:890)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:944)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:630)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:606)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:46)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:603)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:538)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NumberFormatException: For input string: "4/before/4255"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at com.jfinal.core.TypeConverter.convert(TypeConverter.java:58)
+	at com.jfinal.core.Injector.injectBean(Injector.java:74)
+	... 54 more
+4477949 [17/07/20 11:00:05:164][qtp761973299-20][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+4557704 [17/07/20 11:01:24:919][qtp761973299-22][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+4557705 [17/07/20 11:01:24:920][qtp761973299-20][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+4740291 [17/07/20 11:04:27:506][qtp761973299-23][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
+4740298 [17/07/20 11:04:27:513][qtp761973299-23][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+4740701 [17/07/20 11:04:27:916][qtp761973299-24][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+4741097 [17/07/20 11:04:28:312][qtp761973299-22][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+4741099 [17/07/20 11:04:28:314][qtp761973299-22][com.jflyfox.jfinal.component.interceptor.ExceptionInterceptor-intercept] 异常：
+java.lang.RuntimeException: java.lang.NumberFormatException: For input string: "3/before/4253"
+	at com.jfinal.core.Injector.injectBean(Injector.java:78)
+	at com.jfinal.core.Controller.getBean(Controller.java:725)
+	at com.jflyfox.api.interceptor.ApiInterceptor.intercept(ApiInterceptor.java:30)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.CommonInterceptor.intercept(CommonInterceptor.java:45)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.SiteInterceptor.intercept(SiteInterceptor.java:49)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.system.user.UserInterceptor.intercept(UserInterceptor.java:84)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.UpdateCacheInterceptor.intercept(UpdateCacheInterceptor.java:44)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.PageViewInterceptor.intercept(PageViewInterceptor.java:33)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.UserKeyInterceptor.intercept(UserKeyInterceptor.java:28)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.JflyfoxInterceptor.intercept(JflyfoxInterceptor.java:26)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.SessionAttrInterceptor.intercept(SessionAttrInterceptor.java:48)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jfinal.ext.interceptor.SessionInViewInterceptor.intercept(SessionInViewInterceptor.java:44)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.ExceptionInterceptor.intercept(ExceptionInterceptor.java:38)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:74)
+	at com.jflyfox.jfinal.component.handler.CurrentPathHandler.handle(CurrentPathHandler.java:53)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jflyfox.jfinal.component.handler.BasePathHandler.handle(BasePathHandler.java:48)
+	at com.jflyfox.jfinal.component.handler.HtmlHandler.handle(HtmlHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:74)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1338)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:484)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1065)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:413)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:192)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:999)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:250)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:149)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:350)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:454)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:890)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:944)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:630)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:606)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:46)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:603)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:538)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NumberFormatException: For input string: "3/before/4253"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at com.jfinal.core.TypeConverter.convert(TypeConverter.java:58)
+	at com.jfinal.core.Injector.injectBean(Injector.java:74)
+	... 54 more
+4770732 [17/07/20 11:04:57:947][qtp761973299-24][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+4770756 [17/07/20 11:04:57:971][qtp761973299-21][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+5002547 [17/07/20 11:08:49:762][qtp761973299-20][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+5002548 [17/07/20 11:08:49:763][qtp761973299-22][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+5033246 [17/07/20 11:09:20:461][qtp761973299-24][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+5033415 [17/07/20 11:09:20:630][qtp761973299-20][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+5033646 [17/07/20 11:09:20:861][qtp761973299-22][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+5033649 [17/07/20 11:09:20:864][qtp761973299-22][com.jflyfox.jfinal.component.interceptor.ExceptionInterceptor-intercept] 异常：
+java.lang.RuntimeException: java.lang.NumberFormatException: For input string: "2/before/4258"
+	at com.jfinal.core.Injector.injectBean(Injector.java:78)
+	at com.jfinal.core.Controller.getBean(Controller.java:725)
+	at com.jflyfox.api.interceptor.ApiInterceptor.intercept(ApiInterceptor.java:30)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.CommonInterceptor.intercept(CommonInterceptor.java:45)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.SiteInterceptor.intercept(SiteInterceptor.java:49)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.system.user.UserInterceptor.intercept(UserInterceptor.java:84)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.UpdateCacheInterceptor.intercept(UpdateCacheInterceptor.java:44)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.PageViewInterceptor.intercept(PageViewInterceptor.java:33)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.UserKeyInterceptor.intercept(UserKeyInterceptor.java:28)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.JflyfoxInterceptor.intercept(JflyfoxInterceptor.java:26)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.SessionAttrInterceptor.intercept(SessionAttrInterceptor.java:48)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jfinal.ext.interceptor.SessionInViewInterceptor.intercept(SessionInViewInterceptor.java:44)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.ExceptionInterceptor.intercept(ExceptionInterceptor.java:38)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:74)
+	at com.jflyfox.jfinal.component.handler.CurrentPathHandler.handle(CurrentPathHandler.java:53)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jflyfox.jfinal.component.handler.BasePathHandler.handle(BasePathHandler.java:48)
+	at com.jflyfox.jfinal.component.handler.HtmlHandler.handle(HtmlHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:74)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1338)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:484)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1065)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:413)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:192)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:999)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:250)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:149)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:350)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:454)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:890)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:944)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:630)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:606)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:46)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:603)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:538)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NumberFormatException: For input string: "2/before/4258"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at com.jfinal.core.TypeConverter.convert(TypeConverter.java:58)
+	at com.jfinal.core.Injector.injectBean(Injector.java:74)
+	... 54 more
+5035177 [17/07/20 11:09:22:392][qtp761973299-21][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+5044214 [17/07/20 11:09:31:429][qtp761973299-21][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
+5044216 [17/07/20 11:09:31:431][qtp761973299-21][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+5046308 [17/07/20 11:09:33:523][qtp761973299-23][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+5048070 [17/07/20 11:09:35:285][qtp761973299-22][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+5050860 [17/07/20 11:09:38:075][qtp761973299-21][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+5050899 [17/07/20 11:09:38:114][qtp761973299-22][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+5051580 [17/07/20 11:09:38:795][qtp761973299-23][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+5051582 [17/07/20 11:09:38:797][qtp761973299-23][com.jflyfox.jfinal.component.interceptor.ExceptionInterceptor-intercept] 异常：
+java.lang.RuntimeException: java.lang.NumberFormatException: For input string: "4/before/4255"
+	at com.jfinal.core.Injector.injectBean(Injector.java:78)
+	at com.jfinal.core.Controller.getBean(Controller.java:725)
+	at com.jflyfox.api.interceptor.ApiInterceptor.intercept(ApiInterceptor.java:30)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.CommonInterceptor.intercept(CommonInterceptor.java:45)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.SiteInterceptor.intercept(SiteInterceptor.java:49)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.system.user.UserInterceptor.intercept(UserInterceptor.java:84)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.UpdateCacheInterceptor.intercept(UpdateCacheInterceptor.java:44)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.PageViewInterceptor.intercept(PageViewInterceptor.java:33)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.UserKeyInterceptor.intercept(UserKeyInterceptor.java:28)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.JflyfoxInterceptor.intercept(JflyfoxInterceptor.java:26)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.SessionAttrInterceptor.intercept(SessionAttrInterceptor.java:48)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jfinal.ext.interceptor.SessionInViewInterceptor.intercept(SessionInViewInterceptor.java:44)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.ExceptionInterceptor.intercept(ExceptionInterceptor.java:38)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:74)
+	at com.jflyfox.jfinal.component.handler.CurrentPathHandler.handle(CurrentPathHandler.java:53)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jflyfox.jfinal.component.handler.BasePathHandler.handle(BasePathHandler.java:48)
+	at com.jflyfox.jfinal.component.handler.HtmlHandler.handle(HtmlHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:74)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1338)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:484)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1065)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:413)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:192)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:999)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:250)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:149)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:350)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:454)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:890)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:944)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:630)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:606)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:46)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:603)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:538)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NumberFormatException: For input string: "4/before/4255"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at com.jfinal.core.TypeConverter.convert(TypeConverter.java:58)
+	at com.jfinal.core.Injector.injectBean(Injector.java:74)
+	... 54 more
+5054026 [17/07/20 11:09:41:241][qtp761973299-22][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+5171041 [17/07/20 11:11:38:256][qtp761973299-23][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+5171171 [17/07/20 11:11:38:386][qtp761973299-22][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+19037211 [17/07/20 15:02:44:426][qtp761973299-23][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
+19037211 [17/07/20 15:02:44:426][qtp761973299-20][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
+19047023 [17/07/20 15:02:54:238][qtp761973299-23][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+19047023 [17/07/20 15:02:54:238][qtp761973299-20][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+19135161 [17/07/20 15:04:22:376][qtp761973299-23][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+19135334 [17/07/20 15:04:22:549][qtp761973299-24][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+19156232 [17/07/20 15:04:43:447][qtp761973299-25][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+19156462 [17/07/20 15:04:43:677][qtp761973299-21][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+19157735 [17/07/20 15:04:44:950][qtp761973299-23][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+19157974 [17/07/20 15:04:45:189][qtp761973299-23][com.jflyfox.jfinal.component.interceptor.ExceptionInterceptor-intercept] 异常：
+java.lang.RuntimeException: java.lang.NumberFormatException: For input string: "2/before/4258"
+	at com.jfinal.core.Injector.injectBean(Injector.java:78)
+	at com.jfinal.core.Controller.getBean(Controller.java:725)
+	at com.jflyfox.api.interceptor.ApiInterceptor.intercept(ApiInterceptor.java:30)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.CommonInterceptor.intercept(CommonInterceptor.java:45)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.SiteInterceptor.intercept(SiteInterceptor.java:49)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.system.user.UserInterceptor.intercept(UserInterceptor.java:84)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.UpdateCacheInterceptor.intercept(UpdateCacheInterceptor.java:44)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.PageViewInterceptor.intercept(PageViewInterceptor.java:33)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.UserKeyInterceptor.intercept(UserKeyInterceptor.java:28)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.JflyfoxInterceptor.intercept(JflyfoxInterceptor.java:26)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.SessionAttrInterceptor.intercept(SessionAttrInterceptor.java:48)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jfinal.ext.interceptor.SessionInViewInterceptor.intercept(SessionInViewInterceptor.java:44)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.ExceptionInterceptor.intercept(ExceptionInterceptor.java:38)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:74)
+	at com.jflyfox.jfinal.component.handler.CurrentPathHandler.handle(CurrentPathHandler.java:53)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jflyfox.jfinal.component.handler.BasePathHandler.handle(BasePathHandler.java:48)
+	at com.jflyfox.jfinal.component.handler.HtmlHandler.handle(HtmlHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:74)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1338)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:484)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1065)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:413)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:192)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:999)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:250)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:149)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:350)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:454)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:890)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:944)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:630)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:606)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:46)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:603)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:538)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NumberFormatException: For input string: "2/before/4258"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at com.jfinal.core.TypeConverter.convert(TypeConverter.java:58)
+	at com.jfinal.core.Injector.injectBean(Injector.java:74)
+	... 54 more
+19161265 [17/07/20 15:04:48:480][qtp761973299-24][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+19165076 [17/07/20 15:04:52:291][qtp761973299-21][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+19169494 [17/07/20 15:04:56:709][qtp761973299-21][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+19176632 [17/07/20 15:05:03:847][qtp761973299-24][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+19176768 [17/07/20 15:05:03:983][qtp761973299-21][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+19176894 [17/07/20 15:05:04:109][qtp761973299-21][com.jflyfox.jfinal.component.interceptor.ExceptionInterceptor-intercept] 异常：
+java.lang.RuntimeException: java.lang.NumberFormatException: For input string: "2/before/4258"
+	at com.jfinal.core.Injector.injectBean(Injector.java:78)
+	at com.jfinal.core.Controller.getBean(Controller.java:725)
+	at com.jflyfox.api.interceptor.ApiInterceptor.intercept(ApiInterceptor.java:30)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.CommonInterceptor.intercept(CommonInterceptor.java:45)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.SiteInterceptor.intercept(SiteInterceptor.java:49)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.system.user.UserInterceptor.intercept(UserInterceptor.java:84)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.UpdateCacheInterceptor.intercept(UpdateCacheInterceptor.java:44)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.PageViewInterceptor.intercept(PageViewInterceptor.java:33)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.UserKeyInterceptor.intercept(UserKeyInterceptor.java:28)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.JflyfoxInterceptor.intercept(JflyfoxInterceptor.java:26)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.SessionAttrInterceptor.intercept(SessionAttrInterceptor.java:48)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jfinal.ext.interceptor.SessionInViewInterceptor.intercept(SessionInViewInterceptor.java:44)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.ExceptionInterceptor.intercept(ExceptionInterceptor.java:38)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:74)
+	at com.jflyfox.jfinal.component.handler.CurrentPathHandler.handle(CurrentPathHandler.java:53)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jflyfox.jfinal.component.handler.BasePathHandler.handle(BasePathHandler.java:48)
+	at com.jflyfox.jfinal.component.handler.HtmlHandler.handle(HtmlHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:74)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1338)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:484)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1065)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:413)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:192)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:999)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:250)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:149)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:350)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:454)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:890)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:944)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:630)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:606)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:46)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:603)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:538)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NumberFormatException: For input string: "2/before/4258"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at com.jfinal.core.TypeConverter.convert(TypeConverter.java:58)
+	at com.jfinal.core.Injector.injectBean(Injector.java:74)
+	... 54 more
+19212610 [17/07/20 15:05:39:825][qtp761973299-24][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+19212639 [17/07/20 15:05:39:854][qtp761973299-21][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+19217191 [17/07/20 15:05:44:406][qtp761973299-21][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+19262369 [17/07/20 15:06:29:584][qtp761973299-23][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+19262465 [17/07/20 15:06:29:680][qtp761973299-22][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+19419794 [17/07/20 15:09:07:009][qtp761973299-24][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
+19419890 [17/07/20 15:09:07:105][qtp761973299-23][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
+19419924 [17/07/20 15:09:07:139][qtp761973299-24][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+19419929 [17/07/20 15:09:07:144][qtp761973299-23][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+19443792 [17/07/20 15:09:31:007][qtp761973299-24][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+19443794 [17/07/20 15:09:31:009][qtp761973299-25][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+19456814 [17/07/20 15:09:44:029][qtp761973299-25][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+19456832 [17/07/20 15:09:44:047][qtp761973299-23][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+19458019 [17/07/20 15:09:45:234][qtp761973299-20][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+19458077 [17/07/20 15:09:45:292][qtp761973299-20][com.jflyfox.jfinal.component.interceptor.ExceptionInterceptor-intercept] 异常：
+java.lang.RuntimeException: java.lang.NumberFormatException: For input string: "2/before/4258"
+	at com.jfinal.core.Injector.injectBean(Injector.java:78)
+	at com.jfinal.core.Controller.getBean(Controller.java:725)
+	at com.jflyfox.api.interceptor.ApiInterceptor.intercept(ApiInterceptor.java:30)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.CommonInterceptor.intercept(CommonInterceptor.java:45)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.SiteInterceptor.intercept(SiteInterceptor.java:49)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.system.user.UserInterceptor.intercept(UserInterceptor.java:84)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.UpdateCacheInterceptor.intercept(UpdateCacheInterceptor.java:44)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.PageViewInterceptor.intercept(PageViewInterceptor.java:33)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.UserKeyInterceptor.intercept(UserKeyInterceptor.java:28)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.JflyfoxInterceptor.intercept(JflyfoxInterceptor.java:26)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.SessionAttrInterceptor.intercept(SessionAttrInterceptor.java:48)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jfinal.ext.interceptor.SessionInViewInterceptor.intercept(SessionInViewInterceptor.java:44)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.ExceptionInterceptor.intercept(ExceptionInterceptor.java:38)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:74)
+	at com.jflyfox.jfinal.component.handler.CurrentPathHandler.handle(CurrentPathHandler.java:53)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jflyfox.jfinal.component.handler.BasePathHandler.handle(BasePathHandler.java:48)
+	at com.jflyfox.jfinal.component.handler.HtmlHandler.handle(HtmlHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:74)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1338)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:484)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1065)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:413)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:192)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:999)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:250)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:149)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:350)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:454)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:890)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:944)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:630)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:606)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:46)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:603)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:538)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NumberFormatException: For input string: "2/before/4258"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at com.jfinal.core.TypeConverter.convert(TypeConverter.java:58)
+	at com.jfinal.core.Injector.injectBean(Injector.java:74)
+	... 54 more
+19465827 [17/07/20 15:09:53:042][qtp761973299-25][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+19639664 [17/07/20 15:12:46:879][qtp761973299-21][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+19663866 [17/07/20 15:13:11:081][qtp761973299-24][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+19664043 [17/07/20 15:13:11:258][qtp761973299-24][com.jflyfox.jfinal.component.interceptor.ExceptionInterceptor-intercept] 异常：
+java.lang.RuntimeException: java.lang.NumberFormatException: For input string: "2/before/4258"
+	at com.jfinal.core.Injector.injectBean(Injector.java:78)
+	at com.jfinal.core.Controller.getBean(Controller.java:725)
+	at com.jflyfox.api.interceptor.ApiInterceptor.intercept(ApiInterceptor.java:30)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.CommonInterceptor.intercept(CommonInterceptor.java:45)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.SiteInterceptor.intercept(SiteInterceptor.java:49)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.system.user.UserInterceptor.intercept(UserInterceptor.java:84)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.UpdateCacheInterceptor.intercept(UpdateCacheInterceptor.java:44)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.PageViewInterceptor.intercept(PageViewInterceptor.java:33)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.component.interceptor.UserKeyInterceptor.intercept(UserKeyInterceptor.java:28)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.JflyfoxInterceptor.intercept(JflyfoxInterceptor.java:26)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.SessionAttrInterceptor.intercept(SessionAttrInterceptor.java:48)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jfinal.ext.interceptor.SessionInViewInterceptor.intercept(SessionInViewInterceptor.java:44)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jflyfox.jfinal.component.interceptor.ExceptionInterceptor.intercept(ExceptionInterceptor.java:38)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:74)
+	at com.jflyfox.jfinal.component.handler.CurrentPathHandler.handle(CurrentPathHandler.java:53)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jflyfox.jfinal.component.handler.BasePathHandler.handle(BasePathHandler.java:48)
+	at com.jflyfox.jfinal.component.handler.HtmlHandler.handle(HtmlHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:74)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1338)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:484)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1065)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:413)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:192)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:999)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:250)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:149)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:350)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:454)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:890)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:944)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:630)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:606)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:46)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:603)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:538)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NumberFormatException: For input string: "2/before/4258"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at com.jfinal.core.TypeConverter.convert(TypeConverter.java:58)
+	at com.jfinal.core.Injector.injectBean(Injector.java:74)
+	... 54 more
+19841996 [17/07/20 15:16:09:211][qtp761973299-20][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
+19842244 [17/07/20 15:16:09:459][qtp761973299-20][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+20264400 [17/07/20 15:23:11:615][qtp761973299-20][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
+20264698 [17/07/20 15:23:11:913][qtp761973299-20][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+20652987 [17/07/20 15:29:40:202][qtp761973299-22][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
+20653035 [17/07/20 15:29:40:250][qtp761973299-22][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+0 [17/07/20 15:45:33:418][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
+2593 [17/07/20 15:45:36:011][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+3026 [17/07/20 15:45:36:444][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge9e89pqcioal7tgfu0|1f0f92f5, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge9e89pqcioal7tgfu0|1f0f92f5, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+5733 [17/07/20 15:45:39:151][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
+6106 [17/07/20 15:45:39:524][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
+6146 [17/07/20 15:45:39:564][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
+6150 [17/07/20 15:45:39:568][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
+6194 [17/07/20 15:45:39:612][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
+6199 [17/07/20 15:45:39:617][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
+6555 [17/07/20 15:45:39:973][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
+7059 [17/07/20 15:45:40:477][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
+7062 [17/07/20 15:45:40:480][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
+20694 [17/07/20 15:45:54:112][qtp1658704411-25][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+115346 [17/07/20 15:47:28:764][qtp1658704411-19][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+0 [17/07/20 15:48:00:807][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
+345 [17/07/20 15:48:01:152][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+470 [17/07/20 15:48:01:277][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge9e89pqcltxa1p1iqhq|623ed5ed, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge9e89pqcltxa1p1iqhq|623ed5ed, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+893 [17/07/20 15:48:01:700][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
+927 [17/07/20 15:48:01:734][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
+1437 [17/07/20 15:48:02:244][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
+1440 [17/07/20 15:48:02:247][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
+1444 [17/07/20 15:48:02:251][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
+1446 [17/07/20 15:48:02:253][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
+1452 [17/07/20 15:48:02:259][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
+1457 [17/07/20 15:48:02:264][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
+1459 [17/07/20 15:48:02:266][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
+62659 [17/07/20 15:49:03:466][qtp337816703-26][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+224598 [17/07/20 15:51:45:405][qtp337816703-28][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+314971 [17/07/20 15:53:15:778][qtp337816703-26][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
+314984 [17/07/20 15:53:15:791][qtp337816703-26][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+343774 [17/07/20 15:53:44:581][qtp337816703-22][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+349638 [17/07/20 15:53:50:445][qtp337816703-22][com.jflyfox.api.form.ApiForm-getParams] apiform json parse fail:{articleId=4259}
+427802 [17/07/20 15:55:08:609][qtp337816703-26][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+0 [17/07/20 15:59:25:966][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
+272 [17/07/20 15:59:26:238][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+362 [17/07/20 15:59:26:328][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge9e89pqd0ilkjtowov|2c8f65da, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge9e89pqd0ilkjtowov|2c8f65da, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+798 [17/07/20 15:59:26:764][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
+835 [17/07/20 15:59:26:801][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
+857 [17/07/20 15:59:26:823][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
+862 [17/07/20 15:59:26:828][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
+871 [17/07/20 15:59:26:837][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
+872 [17/07/20 15:59:26:838][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
+887 [17/07/20 15:59:26:853][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
+893 [17/07/20 15:59:26:859][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
+894 [17/07/20 15:59:26:860][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
+3663 [17/07/20 15:59:29:629][qtp1859823482-21][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+0 [17/07/20 16:01:29:764][main][com.mchange.v2.log.MLog-<clinit>] MLog clients using log4j logging.
+325 [17/07/20 16:01:30:089][main][com.mchange.v2.c3p0.C3P0Registry-banner] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+465 [17/07/20 16:01:30:229][main][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource-getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge9e89pqd364d1v3ya2g|6dc7b7f, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge9e89pqd364d1v3ya2g|6dc7b7f, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/jfinal_cms?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+874 [17/07/20 16:01:30:638][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化开始......
+905 [17/07/20 16:01:30:669][main][com.jflyfox.system.dict.DictCache-init] ####数据字典Cache初始化......
+1032 [17/07/20 16:01:30:796][main][com.jflyfox.system.user.UserCache-init] ####用户Cache初始化......
+1042 [17/07/20 16:01:30:806][main][com.jflyfox.system.config.ConfigCache-init] ####参数配置Cache初始化......
+1052 [17/07/20 16:01:30:816][main][com.jflyfox.modules.admin.pageview.PageViewCache-init] ####PageViewCache初始化......
+1054 [17/07/20 16:01:30:818][main][com.jflyfox.modules.admin.friendlylink.FriendlylinkCache-init] ####FriendlylinkCache初始化......
+1072 [17/07/20 16:01:30:836][main][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
+1079 [17/07/20 16:01:30:843][main][com.jflyfox.system.log.SysLog-init] ####日志配置初始化......
+1081 [17/07/20 16:01:30:845][main][com.jflyfox.component.util.JFlyFoxCache-init] ####缓存初始化结束......
+6184 [17/07/20 16:01:35:948][qtp2095793272-25][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+32807 [17/07/20 16:02:02:571][qtp2095793272-28][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+61075 [17/07/20 16:02:30:839][qtp2095793272-28][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1012958 [17/07/20 16:18:22:722][qtp2095793272-24][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
+1012958 [17/07/20 16:18:22:722][qtp2095793272-23][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
+1015379 [17/07/20 16:18:25:143][qtp2095793272-24][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1015388 [17/07/20 16:18:25:152][qtp2095793272-23][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1123435 [17/07/20 16:20:13:199][qtp2095793272-24][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1123455 [17/07/20 16:20:13:219][qtp2095793272-26][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1150718 [17/07/20 16:20:40:482][qtp2095793272-23][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1150734 [17/07/20 16:20:40:498][qtp2095793272-24][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1199730 [17/07/20 16:21:29:494][qtp2095793272-26][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1199816 [17/07/20 16:21:29:580][qtp2095793272-23][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1231994 [17/07/20 16:22:01:758][qtp2095793272-26][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1233307 [17/07/20 16:22:03:071][qtp2095793272-28][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1233381 [17/07/20 16:22:03:145][qtp2095793272-25][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1258060 [17/07/20 16:22:27:824][qtp2095793272-27][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1297743 [17/07/20 16:23:07:507][qtp2095793272-23][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1297759 [17/07/20 16:23:07:523][qtp2095793272-26][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1297786 [17/07/20 16:23:07:550][qtp2095793272-25][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1328657 [17/07/20 16:23:38:421][qtp2095793272-23][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
+1328675 [17/07/20 16:23:38:439][qtp2095793272-23][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1328771 [17/07/20 16:23:38:535][qtp2095793272-26][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1911585 [17/07/20 16:33:21:349][qtp2095793272-24][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
+1911587 [17/07/20 16:33:21:351][qtp2095793272-28][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
+1911595 [17/07/20 16:33:21:359][qtp2095793272-28][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1911728 [17/07/20 16:33:21:492][qtp2095793272-24][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1915895 [17/07/20 16:33:25:659][qtp2095793272-24][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1915963 [17/07/20 16:33:25:727][qtp2095793272-25][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1995578 [17/07/20 16:34:45:342][qtp2095793272-24][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+1995633 [17/07/20 16:34:45:397][qtp2095793272-25][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+2007937 [17/07/20 16:34:57:701][qtp2095793272-25][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+2008024 [17/07/20 16:34:57:788][qtp2095793272-24][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+2026373 [17/07/20 16:35:16:137][qtp2095793272-23][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+2026412 [17/07/20 16:35:16:176][qtp2095793272-25][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+2036643 [17/07/20 16:35:26:407][qtp2095793272-24][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+2036679 [17/07/20 16:35:26:443][qtp2095793272-27][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+2038446 [17/07/20 16:35:28:210][qtp2095793272-26][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+2038516 [17/07/20 16:35:28:280][qtp2095793272-24][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+2305866 [17/07/20 16:39:55:630][qtp2095793272-25][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
+2305866 [17/07/20 16:39:55:630][qtp2095793272-23][com.jflyfox.modules.admin.folder.FolderService-initMenuKey] ####目录Key初始化......
+2306193 [17/07/20 16:39:55:957][qtp2095793272-25][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+2306256 [17/07/20 16:39:56:020][qtp2095793272-23][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+2318342 [17/07/20 16:40:08:106][qtp2095793272-23][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+2318387 [17/07/20 16:40:08:151][qtp2095793272-28][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+2338398 [17/07/20 16:40:28:162][qtp2095793272-24][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求
+2338413 [17/07/20 16:40:28:177][qtp2095793272-25][com.jflyfox.system.user.UserInterceptor-intercept] ####非法的请求

@@ -7,11 +7,11 @@ var taglist = temp.tagsPageByFolder(1, 5, 2).list;
 %>
 <style>
 /*导航*/
-.topnav{background:#333333; height:36px; overflow:hidden;}
-.topnav dl{width:1200px; height:36px; margin:0 auto;}
+.topnav{background:#333333;overflow:hidden;}
+.topnav dl{margin:0 auto;}
 .topnav dl dt{float:left;font-weight: 400;}
 .topnav dl dt a{margin-left:40px; float:left; line-height:36px; display:block; color:#ffffff; font-size:12px;}
-.topnav dl dd{float:right; width:150px;text-align: right;}
+.topnav dl dd{width:180px;text-align: right;}
 .topnav dl dd a{margin-left:10px; float:left; line-height:36px; display:block; color:#ffffff; font-size:12px;}
 .topnav dl dd em{float:left; margin-left:10px; line-height:36px; font-family:"SimSun"; color:#ffffff;}
 .topnav dl a:hover{color:#168201;font-size:12px;}
@@ -54,6 +54,7 @@ var taglist = temp.tagsPageByFolder(1, 5, 2).list;
 
 <div class="topnav row">
     <dl>
+    <div class="container">
     <div class="col-md-12">
     	<div class="col-md-6">
     	<% for(item in friendlylinkList){ %>
@@ -81,11 +82,12 @@ var taglist = temp.tagsPageByFolder(1, 5, 2).list;
 		</div>
 		<div class="col-md-2">
         <dd>
-            <a onclick="SetHome(window.location)" href="javascript:void(0)">设为首页</a>
+            <a style="margin-left: 40px;" onclick="SetHome(window.location)" href="javascript:void(0)">设为首页</a>
             <em>|</em>
             <a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">收藏此页</a>
         </dd>
         </div>
+      	</div>
       	</div>
     </dl>
 </div>
